@@ -16,7 +16,7 @@ function App(){
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.bannerContainer}>
                   {
                     news_banner_data.map(banner=>(
-                      <Image source={{uri:banner.imageUrl}} style={styles.bannerImage}/>
+                      <Image key={banner.id} source={{uri:banner.imageUrl}} style={styles.bannerImage}/>
                     ))
                   }
            </ScrollView>
